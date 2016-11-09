@@ -22,6 +22,6 @@ export default ({ locals }) => (
 					<LinkList baseUrl="/styleguide/components" components={locals.components} />
 				</Rhythm>
 			</Rhythm>
-	</Wrapper>
+		</Wrapper>
 	</PageRoot>
 );
