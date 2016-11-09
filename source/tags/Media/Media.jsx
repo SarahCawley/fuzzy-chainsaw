@@ -33,12 +33,12 @@ export const Media_Body = ({
 export const Media = ({
 	tagName = 'div',
 	className = '',
-	type = 'default',
+	align = 'top',
 	children
 }) => {
 	const Tag = tagName;
 	return (
-		<Tag className={`media media--${type} ${className}`}>
+		<Tag className={`media media--${align} ${className}`}>
 			{children}
 		</Tag>
 	);

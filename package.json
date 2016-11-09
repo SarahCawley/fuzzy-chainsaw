@@ -18,6 +18,7 @@
     "production": "gulp production",
     "watch": "gulp watch",
     "webpack-build": "webpack --progress",
+    "webpack-watch": "webpack --watch",
     "start": "http-server ./dist",
     "new-tag": "gulp new-tag --name",
     "new-component": "gulp new-component --name"
