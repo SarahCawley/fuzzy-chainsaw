@@ -6,7 +6,7 @@
 	flex: 1;
 
 	& ~ .media__figure {
-		margin-right: 0;
+		margin-right: inherit;
 		margin-left: 1em;
 	}
 }
