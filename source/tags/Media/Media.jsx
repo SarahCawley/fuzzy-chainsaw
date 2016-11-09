@@ -4,9 +4,15 @@ import styles from './Media.css';
 export const Media_Figure = ({
 	tagName = 'div',
 	className = '',
+	align,
 	children
 }) => {
 	const Tag = tagName;
+
+	if (align !== undefined) {
+		className = `media__figure--${align} ` + className;
+	}
+
 	return (
 		<Tag className={`media__figure ${className}`}>
 			{children}

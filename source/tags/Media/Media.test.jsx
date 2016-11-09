@@ -86,7 +86,7 @@ export default [{
 		</Media>
 	)
 },{
-	name: "media to each side",
+	name: "media to each side, different alignment",
 	component: (
 		<Media>
 			<Media_Figure>
@@ -101,7 +101,7 @@ export default [{
 				</Rhythm>
 			</Media_Body>
 
-			<Media_Figure>
+			<Media_Figure align="bottom">
 				<img src={randySavage} />
 			</Media_Figure>
 		</Media>
@@ -151,7 +151,7 @@ export default [{
 							<img src={randySavage} />
 						</Media_Figure>
 
-						<Media_Figure>
+						<Media_Figure align="bottom">
 							<img src={randySavage} />
 						</Media_Figure>
 					</Media>
