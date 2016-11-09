@@ -3,6 +3,7 @@ import randySavage from './assets/randy-savage.jpg';
 import { Media, Media_Figure, Media_Body } from './Media.jsx';
 
 import Heading from '../Heading/Heading'
+import Rhythm from '../Rhythm/Rhythm';
 
 export default [{
 	name: "media to the left",
@@ -13,9 +14,11 @@ export default [{
 			</Media_Figure>
 
 			<Media_Body>
-				<Heading level="3">Randy Savage Buddy</Heading>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+				<Rhythm size="small">
+					<Heading level="3">Randy Savage Buddy</Heading>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+				</Rhythm>
 			</Media_Body>
 		</Media>
 	),
@@ -30,9 +33,11 @@ export default [{
 	component: (
 		<Media>
 			<Media_Body>
-				<Heading level="3">Randy Savage Buddy</Heading>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+				<Rhythm size="small">
+					<Heading level="3">Randy Savage Buddy</Heading>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+				</Rhythm>
 			</Media_Body>
 
 			<Media_Figure>
@@ -55,9 +60,11 @@ export default [{
 			</Media_Figure>
 
 			<Media_Body>
-				<Heading level="3">Randy Savage Buddy</Heading>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+				<Rhythm size="small">
+					<Heading level="3">Randy Savage Buddy</Heading>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+				</Rhythm>
 			</Media_Body>
 		</Media>
 	)
@@ -70,9 +77,11 @@ export default [{
 			</Media_Figure>
 
 			<Media_Body>
-				<Heading level="3">Randy Savage Buddy</Heading>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+				<Rhythm size="small">
+					<Heading level="3">Randy Savage Buddy</Heading>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+				</Rhythm>
 			</Media_Body>
 		</Media>
 	)
@@ -85,9 +94,11 @@ export default [{
 			</Media_Figure>
 
 			<Media_Body>
-				<Heading level="3">Randy Savage Buddy</Heading>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+				<Rhythm size="small">
+					<Heading level="3">Randy Savage Buddy</Heading>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+				</Rhythm>
 			</Media_Body>
 
 			<Media_Figure>
@@ -108,35 +119,43 @@ export default [{
 			</Media_Figure>
 
 			<Media_Body>
-				<Heading level="3">Randy Savage Buddy</Heading>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+				<Rhythm size="large">
+					<Rhythm size="small">
+						<Heading level="3">Randy Savage Buddy</Heading>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+					</Rhythm>
 
-				<Media>
-					<Media_Figure>
-						<img src={randySavage} />
-					</Media_Figure>
+					<Media>
+						<Media_Figure>
+							<img src={randySavage} />
+						</Media_Figure>
 
-					<Media_Body>
-						<Heading level="3">Lorem ipsum dolor sit.</Heading>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quisquam sequi odit hic adipisci, ad consequatur quasi id aspernatur debitis saepe voluptatum veritatis consequuntur quas porro dolor molestiae error iste iusto voluptate nisi atque tempore! Beatae quod debitis modi soluta!</p>
-					</Media_Body>
-				</Media>
+						<Media_Body>
+							<Rhythm size="small">
+								<Heading level="3">Lorem ipsum dolor sit.</Heading>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quisquam sequi odit hic adipisci, ad consequatur quasi id aspernatur debitis saepe voluptatum veritatis consequuntur quas porro dolor molestiae error iste iusto voluptate nisi atque tempore! Beatae quod debitis modi soluta!</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quisquam sequi odit hic adipisci, ad consequatur quasi id aspernatur debitis saepe voluptatum veritatis consequuntur quas porro dolor molestiae error iste iusto voluptate nisi atque tempore! Beatae quod debitis modi soluta!</p>
+							</Rhythm>
+						</Media_Body>
+					</Media>
 
-				<Media>
-					<Media_Body>
-						<Heading level="3">Lorem ipsum dolor sit.</Heading>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quisquam sequi odit hic adipisci, ad consequatur quasi id aspernatur debitis saepe voluptatum veritatis consequuntur quas porro dolor molestiae error iste iusto voluptate nisi atque tempore! Beatae quod debitis modi soluta!</p>
-					</Media_Body>
+					<Media>
+						<Media_Body>
+							<Rhythm size="small">
+								<Heading level="3">Lorem ipsum dolor sit.</Heading>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quisquam sequi odit hic adipisci, ad consequatur quasi id aspernatur debitis saepe voluptatum veritatis consequuntur quas porro dolor molestiae error iste iusto voluptate nisi atque tempore! Beatae quod debitis modi soluta!</p>
+							</Rhythm>
+						</Media_Body>
 
-					<Media_Figure>
-						<img src={randySavage} />
-					</Media_Figure>
+						<Media_Figure>
+							<img src={randySavage} />
+						</Media_Figure>
 
-					<Media_Figure>
-						<img src={randySavage} />
-					</Media_Figure>
-				</Media>
-
+						<Media_Figure>
+							<img src={randySavage} />
+						</Media_Figure>
+					</Media>
+				</Rhythm>
 			</Media_Body>
 		</Media>
 	)

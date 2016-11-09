@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Media.css';
-import Rhythm from '../Rhythm/Rhythm';
 
 export const Media_Figure = ({
 	tagName = 'div',
@@ -23,9 +22,7 @@ export const Media_Body = ({
 	const Tag = tagName;
 	return (
 		<Tag className={`media__body ${className}`}>
-			<Rhythm>
-				{children}
-			</Rhythm>
+			{children}
 		</Tag>
 	);
 };
