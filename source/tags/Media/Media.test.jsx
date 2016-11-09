@@ -76,6 +76,25 @@ export default [{
 			</Media_Body>
 		</Media>
 	)
+},{
+	name: "media to each side",
+	component: (
+		<Media>
+			<Media_Figure>
+				<img src={randySavage} />
+			</Media_Figure>
+
+			<Media_Body>
+				<Heading level="3">Randy Savage Buddy</Heading>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis accusantium dolorum deserunt rem ex voluptas impedit doloribus facere, velit, possimus! Aliquid amet, corrupti cumque quae perferendis eos recusandae, nam non dicta velit rem enim vitae! Facere, aliquid inventore reiciendis.</p>
+			</Media_Body>
+
+			<Media_Figure>
+				<img src={randySavage} />
+			</Media_Figure>
+		</Media>
+	)
 }, {
 	name: "media nested",
 	component: (
