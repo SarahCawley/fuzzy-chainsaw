@@ -3,13 +3,13 @@ import styles from './PageRoot.css';
 
 import IconSet from '../IconSet/IconSet';
 
-export const PageRoot__Wrapper = ({ children }) => (
+export const PageRoot_Wrapper = ({ children }) => (
 	<html>
 		{children}
 	</html>
 );
 
-export const PageRoot__Head = ({ title, children }) => (
+export const PageRoot_Head = ({ title, children }) => (
 	<head>
 		<meta charset="utf-8" />
 		<title>{title}</title>
@@ -18,7 +18,7 @@ export const PageRoot__Head = ({ title, children }) => (
 	</head>
 );
 
-export const PageRoot__Body = ({ className, children }) => (
+export const PageRoot_Body = ({ className, children }) => (
 	<body className={className}>
 		<IconSet />
 		{children}
@@ -27,10 +27,10 @@ export const PageRoot__Body = ({ className, children }) => (
 );
 
 export const PageRoot = ({ title, bodyClass = "", children }) => (
-	<PageRoot__Wrapper>
-		<PageRoot__Head title={title} />
-		<PageRoot__Body className={bodyClass}>{children}</PageRoot__Body>
-	</PageRoot__Wrapper>
+	<PageRoot_Wrapper>
+		<PageRoot_Head title={title} />
+		<PageRoot_Body className={bodyClass}>{children}</PageRoot_Body>
+	</PageRoot_Wrapper>
 );
 
 
