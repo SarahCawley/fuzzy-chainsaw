@@ -1,4 +1,3 @@
-@import '../../variables/grid.css';
 .two-up {
 	lost-column: 1/2 var(--gutterWidth) no-flex;
 	padding: var(--columnPadding);
@@ -21,15 +20,6 @@
 	}		
 }
 
-
-.column {
-	&.test {
-		border: 1px solid black;	
-		padding: 2rem 0;
-		text-align: center;	
-	}	
-}
-
 @for $i from 1 to var(--columnCount) {
 	.column {
 		&.column-$i { 
@@ -38,6 +28,7 @@
 				lost-column: $i/var(--columnCount)  0px no-flex;
 			}
 		}
+		
 		&.push-$i {
 			lost-move: $i/var(--columnCount);
 			&.no-gutter {
@@ -50,5 +41,14 @@
 				
 			}		
 		}
+	}		
+}
+
+/* for tests only */
+.column {
+	&.test {
+		border: 1px solid black;	
+		padding: 2rem 0;
+		text-align: center;	
 	}	
 }

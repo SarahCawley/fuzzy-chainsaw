@@ -3,29 +3,19 @@ import styles from './Row.css';
 
 export default ({
 	className = '',
-	flex = "",
 	children,
-	outerAlign = "center",
-	innerAlign = ""
+	size = "12",
+	align = "center",
+	childPosition = ""
 }) => {
-	let alignmentClasses;
-	let flexClass;
+	let alignClass, sizeClass, positionClass;
+	align = (size.toLowerCase() == 'reset')? ' ' : align + ' ';
+	size = 'row-'+size+' ';
+	childPosition = (childPosition.length)? ' position-children-'+childPosition+' ' : ' ';
 
-	innerAlign = (innerAlign.length)? ' align-chlidren-'+innerAlign : '';
-	flexClass = 'flex-'+flex+' ';
-	alignmentClasses = outerAlign + innerAlign + ' ';
-
-	if(flex){
-		return (
-			<div className={"row "+ alignmentClasses + flexClass + className} data-flex-type={`${flex}`}>
-				{children}
-			</div>
-		)		
-	}else {
-		return (
-			<div className={"row "+ alignmentClasses + " " + className}>
-				{children}
-			</div>
-		)		
-	}
+	return (
+		<div className={"row "+ size  + align + childPosition + className}>
+			{children}
+		</div>
+	)
 };

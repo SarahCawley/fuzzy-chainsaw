@@ -1,15 +1,3 @@
-/* The default gutter size for columns */
-@lost gutter 60px;
-
-/* Include or not inlcude flexbox */
-@lost flexbox flex;
-
-/* Include or not include cycle */
-@lost cycle none;
-
-/* The default clear direction */
-@lost clearing left;
-
 :root {
 	/* The number of columns in the grid system. */
 	--columnCount: 12;
@@ -32,3 +20,15 @@
 	/* The opposite float of `$defaultFloat`. */
 	--switchFloat: right;
 }
+
+/* The default gutter size for columns */
+@lost gutter 16px;
+
+/* Include or not inlcude flexbox */
+@lost flexbox flex;
+
+/* Include or not include cycle */
+@lost cycle none;
+
+/* The default clear direction */
+@lost clearing left;

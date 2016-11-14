@@ -1,88 +1,90 @@
 .row {
 	lost-utility: clearfix;
 	&.center {
-		lost-center: var(--rowMaxWidth) no-flex;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: calc(var(--rowMaxWidth));
 	}
 	&.reset {
 		width: 100%;
 	}
 
-	&.align-children- {
+	&.position-children- {
 		/* Centers / Middles / Reset */
 		&center {
-			lost-align: center; //same as { margin: 0 auto; }
+			lost-align: center no-flex;
 		}
 		&middle-center {
-			lost-align: middle-center; //same as { margin: 0 auto; vertical-align: middle; }
+			lost-align: middle-center no-flex; 			
 		}
 		&reset {
-			lost-align: reset;
+			lost-align: reset no-flex;			
 		}		
 
 		/* Tops */
 		&top {
-			lost-align: top;
+			lost-align: top no-flex;			
 		}	
 		&top-left {
-			lost-align: top-left;
+			lost-align: top-left no-flex;			
 		}
 		&top-center {
-			lost-align: top-center;
+			lost-align: top-center no-flex;			
 		}
 		&top-right {
-			lost-align: top-right;
+			lost-align: top-right no-flex;			
 		}	
 
 		/* Bottoms */
 		&bottom {
-			lost-align: bottom;
+			lost-align: bottom no-flex;			
 		}
 		&bottom-left {
-			lost-align: bottom-left;
+			lost-align: bottom-left no-flex;			
 		}
 		&bottom-center {
-			lost-align: bottom-center;
+			lost-align: bottom-center no-flex;			
 		}
 		&bottom-right {
-			lost-align: bottom-right;
+			lost-align: bottom-right no-flex;			
 		}
 
 		/* Lefts */
 		&left {
-			lost-align: left;
+			lost-align: left no-flex;			
 		}	
 		&middle-left {
-			lost-align: middle-left;
+			lost-align: middle-left no-flex;			
 		}	
 
 		/* Rights */	
 		&right {
-			lost-align: right;
+			lost-align: right no-flex;
 		}			
 		&middle-right {
-			lost-align: middle-right;
+			lost-align: middle-right no-flex;			
 		}		
 
 		/* Horizontal / Vertical */			
 		&vert {
-			lost-align: vertical;
+			lost-align: vertical no-flex;			
 		}
 		&horz {
-			lost-align: horizontal;
+			lost-align: horizontal no-flex;			
 		}
-	}
-
-	&.flex-row {
-		lost-flex-container: row;
-	}
-
-	&.flex-column {
-		lost-flex-container: column;
 	}
 }
 
+@for $var from 1 to 12 {
+	.row {
+		&.row-$(var) { 
+			max-width: calc(calc(calc(var(--rowMaxWidth) / var(--columnCount)) * $var) + var(--columnPadding));
+		}
+	}
+}
 
-.row.test {
-	background: black;
-	color: white;
+/* for tests only */
+.row.test-height {
+	border: 1px solid black;
+	height: 512px;
 }
