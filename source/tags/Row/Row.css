@@ -11,58 +11,61 @@
 
 	&.position-children- {
 		/* Centers / Middles / Reset */
-		&center {
-			lost-align: center no-flex;
-		}
-		&middle-center {
-			lost-align: middle-center no-flex; 			
-		}
 		&reset {
 			lost-align: reset no-flex;			
 		}		
+		&center {
+			lost-align: center no-flex;
+		}
+		&middle {
+			&-left {
+				lost-align: middle-left no-flex;			
+			}				
+			&-right {
+				lost-align: middle-right no-flex;			
+			}			
+			&-center {
+				lost-align: middle-center no-flex; 			
+			}
+		}
+		
 
 		/* Tops */
 		&top {
-			lost-align: top no-flex;			
-		}	
-		&top-left {
-			lost-align: top-left no-flex;			
-		}
-		&top-center {
-			lost-align: top-center no-flex;			
-		}
-		&top-right {
-			lost-align: top-right no-flex;			
+			lost-align: top no-flex;	
+			&-left {
+				lost-align: top-left no-flex;			
+			}
+			&-center {
+				lost-align: top-center no-flex;			
+			}
+			&-right {
+				lost-align: top-right no-flex;			
+			}						
 		}	
 
 		/* Bottoms */
 		&bottom {
-			lost-align: bottom no-flex;			
-		}
-		&bottom-left {
-			lost-align: bottom-left no-flex;			
-		}
-		&bottom-center {
-			lost-align: bottom-center no-flex;			
-		}
-		&bottom-right {
-			lost-align: bottom-right no-flex;			
+			lost-align: bottom no-flex;
+			&-left {
+				lost-align: bottom-left no-flex;			
+			}
+			&-center {
+				lost-align: bottom-center no-flex;			
+			}
+			&-right {
+				lost-align: bottom-right no-flex;			
+			}				
 		}
 
 		/* Lefts */
 		&left {
 			lost-align: left no-flex;			
 		}	
-		&middle-left {
-			lost-align: middle-left no-flex;			
-		}	
-
+	
 		/* Rights */	
 		&right {
 			lost-align: right no-flex;
-		}			
-		&middle-right {
-			lost-align: middle-right no-flex;			
 		}		
 
 		/* Horizontal / Vertical */			
@@ -78,13 +81,7 @@
 @for $var from 1 to 12 {
 	.row {
 		&.row-$(var) { 
-			max-width: calc(calc(calc(var(--rowMaxWidth) / var(--columnCount)) * $var) + var(--columnPadding));
+			max-width: calc(calc(calc(var(--rowMaxWidth) / var(--columnCount)) * $var) + var(--gutterWidth));
 		}
 	}
-}
-
-/* for tests only */
-.row.test-height {
-	border: 1px solid black;
-	height: 512px;
 }

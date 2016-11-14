@@ -59,40 +59,40 @@ module.exports = [{
 	name: 'Pre-calculated - Size 1 (w/o optional gutters)',
 	component: (
 		<Row outerAlign="reset">
-			<Column size="1" className="test" gutter="false">
+			<Column size="1" className="sg-column" gutter="false">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="test" gutter="false">
+			<Column size="1" className="sg-column" gutter="false">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="test" gutter="false">
+			<Column size="1" className="sg-column" gutter="false">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="test" gutter="false">
+			<Column size="1" className="sg-column" gutter="false">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="test" gutter="false">
+			<Column size="1" className="sg-column" gutter="false">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="test" gutter="false">
+			<Column size="1" className="sg-column" gutter="false">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="test" gutter="false">
+			<Column size="1" className="sg-column" gutter="false">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="test" gutter="false">
+			<Column size="1" className="sg-column" gutter="false">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="test" gutter="false">
+			<Column size="1" className="sg-column" gutter="false">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="test" gutter="false">
+			<Column size="1" className="sg-column" gutter="false">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="test" gutter="false">
+			<Column size="1" className="sg-column" gutter="false">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="test" gutter="false">
+			<Column size="1" className="sg-column" gutter="false">
 				{ ColumnTitles[0] }
 			</Column>			
 		</Row>																
@@ -101,22 +101,22 @@ module.exports = [{
 	name: 'Pre-calculated - Size 2 (w/o optional gutters)',
 	component: (
 		<Row outerAlign="reset">
-			<Column size="2" className="test" gutter="false">
+			<Column size="2" className="sg-column" gutter="false">
 				{ ColumnTitles[1] }
 			</Column>
-			<Column size="2" className="test" gutter="false">
+			<Column size="2" className="sg-column" gutter="false">
 				{ ColumnTitles[1] }
 			</Column>
-			<Column size="2" className="test" gutter="false">
+			<Column size="2" className="sg-column" gutter="false">
 				{ ColumnTitles[1] }
 			</Column>
-			<Column size="2" className="test" gutter="false">
+			<Column size="2" className="sg-column" gutter="false">
 				{ ColumnTitles[1] }
 			</Column>
-			<Column size="2" className="test" gutter="false">
+			<Column size="2" className="sg-column" gutter="false">
 				{ ColumnTitles[1] }
 			</Column>
-			<Column size="2" className="test" gutter="false">
+			<Column size="2" className="sg-column" gutter="false">
 				{ ColumnTitles[1] }
 			</Column>			
 		</Row>																
@@ -125,16 +125,16 @@ module.exports = [{
 	name: 'Pre-calculated - Size 3 (w/o optional gutters)',
 	component: (
 		<Row outerAlign="reset">
-			<Column size="3" className="test" gutter="false">
+			<Column size="3" className="sg-column" gutter="false">
 				{ ColumnTitles[2] }
 			</Column>
-			<Column size="3" className="test" gutter="false">
+			<Column size="3" className="sg-column" gutter="false">
 				{ ColumnTitles[2] }
 			</Column>
-			<Column size="3" className="test" gutter="false">
+			<Column size="3" className="sg-column" gutter="false">
 				{ ColumnTitles[2] }
 			</Column>
-			<Column size="3" className="test" gutter="false">
+			<Column size="3" className="sg-column" gutter="false">
 				{ ColumnTitles[2] }
 			</Column>			
 		</Row>																
@@ -143,13 +143,13 @@ module.exports = [{
 	name: 'Pre-calculated - Size 4 (w/o optional gutters)',
 	component: (
 		<Row outerAlign="reset">
-			<Column size="4" className="test" gutter="false">
+			<Column size="4" className="sg-column" gutter="false">
 				{ ColumnTitles[3] }
 			</Column>
-			<Column size="4" className="test" gutter="false">
+			<Column size="4" className="sg-column" gutter="false">
 				{ ColumnTitles[3] }
 			</Column>
-			<Column size="4" className="test" gutter="false">
+			<Column size="4" className="sg-column" gutter="false">
 				{ ColumnTitles[3] }
 			</Column>			
 		</Row>																
@@ -158,10 +158,10 @@ module.exports = [{
 	name: 'Pre-calculated - Size 6 (w/o optional gutters)',
 	component: (
 		<Row outerAlign="reset">
-			<Column size="6" className="test" gutter="false">
+			<Column size="6" className="sg-column" gutter="false">
 				{ ColumnTitles[5] }
 			</Column>
-			<Column size="6" className="test" gutter="false">
+			<Column size="6" className="sg-column" gutter="false">
 				{ ColumnTitles[5] }
 			</Column>			
 		</Row>																
@@ -170,10 +170,10 @@ module.exports = [{
 	name: 'Pre-calculated - Size 1 over 11',
 	component: (
 		<Row outerAlign="reset">
-			<Column size="1" className="test">
+			<Column size="1" className="sg-column">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="11" className="test">
+			<Column size="11" className="sg-column">
 				{ ColumnTitles[10] }
 			</Column>			
 		</Row>																
@@ -182,10 +182,10 @@ module.exports = [{
 	name: 'Pre-calculated - Size 2 over 10',
 	component: (
 		<Row outerAlign="reset">
-			<Column size="2" className="test">
+			<Column size="2" className="sg-column">
 				{ ColumnTitles[1] }
 			</Column>
-			<Column size="10" className="test">
+			<Column size="10" className="sg-column">
 				{ ColumnTitles[9] }
 			</Column>			
 		</Row>																
@@ -194,10 +194,10 @@ module.exports = [{
 	name: 'Pre-calculated - Size 3 over 9',
 	component: (
 		<Row outerAlign="reset">
-			<Column size="3" className="test">
+			<Column size="3" className="sg-column">
 				{ ColumnTitles[2] }
 			</Column>
-			<Column size="9" className="test">
+			<Column size="9" className="sg-column">
 				{ ColumnTitles[8] }
 			</Column>			
 		</Row>																
@@ -206,10 +206,10 @@ module.exports = [{
 	name: 'Pre-calculated - Size 4 over 8',
 	component: (
 		<Row outerAlign="reset">
-			<Column size="4" className="test">
+			<Column size="4" className="sg-column">
 				{ ColumnTitles[3] }
 			</Column>
-			<Column size="8" className="test">
+			<Column size="8" className="sg-column">
 				{ ColumnTitles[7] }
 			</Column>		
 		</Row>																
@@ -218,10 +218,10 @@ module.exports = [{
 	name: 'Pre-calculated - Size 5 over 7',
 	component: (
 		<Row outerAlign="reset">
-			<Column size="5" className="test">
+			<Column size="5" className="sg-column">
 				{ ColumnTitles[4] }
 			</Column>
-			<Column size="7" className="test">
+			<Column size="7" className="sg-column">
 				{ ColumnTitles[6] }
 			</Column>			
 		</Row>																
@@ -230,10 +230,10 @@ module.exports = [{
 	name: 'Pre-calculated - Size 6 over 6',
 	component: (
 		<Row outerAlign="reset">
-			<Column size="6" className="test">
+			<Column size="6" className="sg-column">
 				{ ColumnTitles[5] }
 			</Column>
-			<Column size="6" className="test">
+			<Column size="6" className="sg-column">
 				{ ColumnTitles[5] }
 			</Column>			
 		</Row>																
@@ -242,10 +242,10 @@ module.exports = [{
 	name: 'Pre-calculated - Size 7 over 5',
 	component: (
 		<Row outerAlign="reset">
-			<Column size="7" className="test">
+			<Column size="7" className="sg-column">
 				{ ColumnTitles[6] }
 			</Column>
-			<Column size="5" className="test">
+			<Column size="5" className="sg-column">
 				{ ColumnTitles[4] }
 			</Column>			
 		</Row>																
@@ -254,10 +254,10 @@ module.exports = [{
 	name: 'Pre-calculated - Size 8 over 4',
 	component: (
 		<Row outerAlign="reset">
-			<Column size="8" className="test">
+			<Column size="8" className="sg-column">
 				{ ColumnTitles[7] }
 			</Column>
-			<Column size="4" className="test">
+			<Column size="4" className="sg-column">
 				{ ColumnTitles[3] }
 			</Column>			
 		</Row>																
@@ -266,10 +266,10 @@ module.exports = [{
 	name: 'Pre-calculated - Size 9 over 3',
 	component: (
 		<Row outerAlign="reset">
-			<Column size="9" className="test">
+			<Column size="9" className="sg-column">
 				{ ColumnTitles[8] }
 			</Column>
-			<Column size="3" className="test">
+			<Column size="3" className="sg-column">
 				{ ColumnTitles[2] }
 			</Column>			
 		</Row>																
@@ -278,10 +278,10 @@ module.exports = [{
 	name: 'Pre-calculated - Size 10 over 2',
 	component: (
 		<Row outerAlign="reset">
-			<Column size="10" className="test">
+			<Column size="10" className="sg-column">
 				{ ColumnTitles[9] }
 			</Column>
-			<Column size="2" className="test">
+			<Column size="2" className="sg-column">
 				{ ColumnTitles[1] }
 			</Column>		
 		</Row>																
@@ -290,10 +290,10 @@ module.exports = [{
 	name: 'Pre-calculated - Size 11 over 1',
 	component: (
 		<Row outerAlign="reset">
-			<Column size="11" className="test">
+			<Column size="11" className="sg-column">
 				{ ColumnTitles[10] }
 			</Column>
-			<Column size="1" className="test">
+			<Column size="1" className="sg-column">
 				{ ColumnTitles[0] }
 			</Column>			
 		</Row>																
@@ -302,10 +302,10 @@ module.exports = [{
 	name: 'Push / Pull',
 	component: (
 		<Row outerAlign="reset">
-			<Column size="4" className="test" gutter="false" push="8">
+			<Column size="4" className="sg-column" gutter="false" push="8">
 				{ ColumnTitles[1] }
 			</Column>
-			<Column size="8" className="test" gutter="false" pull="4">
+			<Column size="8" className="sg-column" gutter="false" pull="4">
 				{ ColumnTitles[3] }
 			</Column>									
 		</Row>																

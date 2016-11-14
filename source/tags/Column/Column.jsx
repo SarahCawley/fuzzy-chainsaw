@@ -4,30 +4,24 @@ import styles from './Column.css';
 export default ({
 	className = '',
 	size = 0,
-	flex = false,
 	children,
 	gutter = true,
 	push = 0,
 	pull = 0
 }) => {
-	let flexClass, sizeClass, gutterClass, pushClass, pullClass;
-	flexClass = (flex)? 'flex ' : ' ';
-	sizeClass =  (size > 0)? 'column column-'+size+' ' : ' ';
-	gutterClass = (gutter == true)? ' ' : 'no-gutter ';
-	pushClass = (push > 0) ? 'push-'+push+' ': ' ';
-	pullClass = (pull > 0) ? 'pull-'+pull+' ': ' ';
+	let columnClasses;
 
-	if(flex) {
-		return (			
-			<div className={flexClass + sizeClass + gutterClass + pushClass + pullClass + className}>
-				{children}
-			</div>
-		)			
-	}else{
-		return (			
-			<div className={sizeClass + gutterClass + pushClass + pullClass + className}>
-				{children}
-			</div>
-		)
-	}
+	size =  (size > 0)? 'column column-'+size: '';
+	gutter = (gutter == true)? '' : 'no-gutter';
+	push = (push > 0) ? 'push-'+push : '';
+	pull = (pull > 0) ? 'pull-'+pull : '';
+
+	//removes deadspace
+	columnClasses = size + ' ' + gutter + ' ' + push + ' ' + pull + ' ' + className;
+	columnClasses = columnClasses.replace(/  /g, ' ');
+	return (			
+		<div className={columnClasses}>
+			{children}
+		</div>
+	)
 }
