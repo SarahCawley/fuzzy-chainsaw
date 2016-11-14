@@ -1,0 +1,34 @@
+/* The default gutter size for columns */
+@lost gutter 60px;
+
+/* Include or not inlcude flexbox */
+@lost flexbox flex;
+
+/* Include or not include cycle */
+@lost cycle none;
+
+/* The default clear direction */
+@lost clearing left;
+
+:root {
+	/* The number of columns in the grid system. */
+	--columnCount: 12;
+	
+	/* The default breakpoint at which columns in the grid and semantic grid systems change from 100% to the column width specified. */
+	--columnBreakpoint: medium;
+
+	/* The default amount of padding within columns in pixels. */
+	--columnPadding: 16px;
+
+	/* The default gutter width between columns in pixels or percent. */
+	--gutterWidth: 16px;
+
+	/* The maximum width of a row on the page.<p>**NOTE**: if `$gutterWidth` is in pixels, `$rowMaxWidth` must be in pixels.</p> */
+	--rowMaxWidth: 1220px;
+
+	/* The default direction in which to float content. */
+	--defaultFloat: left;
+
+	/* The opposite float of `$defaultFloat`. */
+	--switchFloat: right;
+}

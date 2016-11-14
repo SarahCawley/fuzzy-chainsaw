@@ -1,0 +1,54 @@
+@import '../../variables/grid.css';
+.two-up {
+	lost-column: 1/2 var(--gutterWidth) no-flex;
+	padding: var(--columnPadding);
+	&.flex {
+		lost-column: 1/2 var(--gutterWidth);
+	}
+}
+.three-up {
+	lost-column: 4/12 var(--gutterWidth) no-flex;
+	padding: var(--columnPadding);
+	&.flex {
+		lost-column: 4/12 var(--gutterWidth);
+	}
+}
+.four-up {
+	lost-column: 3/12 var(--gutterWidth) no-flex;
+	padding: var(--columnPadding);
+	&.flex {
+		lost-column: 3/12 var(--gutterWidth);
+	}		
+}
+
+
+.column {
+	&.test {
+		border: 1px solid black;	
+		padding: 2rem 0;
+		text-align: center;	
+	}	
+}
+
+@for $i from 1 to var(--columnCount) {
+	.column {
+		&.column-$i { 
+			lost-column: $i/var(--columnCount) no-flex;
+			&.no-gutter {
+				lost-column: $i/var(--columnCount)  0px no-flex;
+			}
+		}
+		&.push-$i {
+			lost-move: $i/var(--columnCount);
+			&.no-gutter {
+				lost-move: $i/var(--columnCount)  0px;
+			}		
+		}
+		&.pull-$i {
+			lost-move: -$i/var(--columnCount)  0px;
+			&.no-gutter {
+				
+			}		
+		}
+	}	
+}
