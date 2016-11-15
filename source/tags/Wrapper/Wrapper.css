@@ -9,7 +9,7 @@
 	&--center,
 	&--left,
 	&--right {
-		max-width: calc(var(--grid--row--max-width));
+		max-width: calc(var(--grid--wrapper--max-width));
 	}	
 	&--center:not(.wrapper--size--reset) {
 		margin-left: auto;
@@ -21,7 +21,7 @@
 }
 
 .wrapper--size--default {
-	max-width: calc(var(--grid--row--max-width));
+	max-width: calc(var(--grid--wrapper--max-width));
 }
 
 .wrapper--size--small {
@@ -36,6 +36,6 @@
 
 @for $var from 1 to var(--grid--column--count) {
 	.wrapper--size--$(var) { 
-		max-width: calc(calc(calc(var(--grid--row--max-width) / var(--grid--column--count)) * $var) + var(--grid--gutter--width));
+		max-width: calc(calc(calc(var(--grid--wrapper--max-width) / var(--grid--column--count)) * $var) + var(--grid--gutter--width));
 	}
 }

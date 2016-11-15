@@ -12,7 +12,7 @@
 	--grid--gutter--width: 16px;
 
 	/* The maximum width of a row on the page.<p>**NOTE**: if `$gutterWidth` is in pixels, `$rowMaxWidth` must be in pixels.</p> */
-	--grid--row--max-width: 1220px;
+	--grid--wrapper--max-width: 1220px;
 }
 
 /* The default gutter size for columns */
