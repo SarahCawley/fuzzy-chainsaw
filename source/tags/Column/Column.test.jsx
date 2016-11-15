@@ -11,112 +11,154 @@ ColumnTitles = [
 
 
 module.exports = [{
-	name: 'Pre-calculated - Size 1 (w/o optional gutters)',
+	name: 'Pre-calculated - Size 1 (no padding / gutters)',
 	component: (
 		<Wrapper outerAlign="reset">
-			<Column size="1" className="sg-column" gutter="false">
+			<Column size="1" className="sg-column" gutter="off" padding="off">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="sg-column" gutter="false">
+			<Column size="1" className="sg-column" gutter="off" padding="off">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="sg-column" gutter="false">
+			<Column size="1" className="sg-column" gutter="off" padding="off">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="sg-column" gutter="false">
+			<Column size="1" className="sg-column" gutter="off" padding="off">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="sg-column" gutter="false">
+			<Column size="1" className="sg-column" gutter="off" padding="off">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="sg-column" gutter="false">
+			<Column size="1" className="sg-column" gutter="off" padding="off">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="sg-column" gutter="false">
+			<Column size="1" className="sg-column" gutter="off" padding="off">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="sg-column" gutter="false">
+			<Column size="1" className="sg-column" gutter="off" padding="off">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="sg-column" gutter="false">
+			<Column size="1" className="sg-column" gutter="off" padding="off">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="sg-column" gutter="false">
+			<Column size="1" className="sg-column" gutter="off" padding="off">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="sg-column" gutter="false">
+			<Column size="1" className="sg-column" gutter="off" padding="off">
 				{ ColumnTitles[0] }
 			</Column>
-			<Column size="1" className="sg-column" gutter="false">
+			<Column size="1" className="sg-column" gutter="off" padding="off">
 				{ ColumnTitles[0] }
 			</Column>			
 		</Wrapper>																
 	)
 },{
-	name: 'Pre-calculated - Size 2 (w/o optional gutters)',
+	name: 'Pre-calculated - Size 1',
 	component: (
 		<Wrapper outerAlign="reset">
-			<Column size="2" className="sg-column" gutter="false">
+			<Column size="1" className="sg-column">
+				{ ColumnTitles[0] }
+			</Column>
+			<Column size="1" className="sg-column">
+				{ ColumnTitles[0] }
+			</Column>
+			<Column size="1" className="sg-column">
+				{ ColumnTitles[0] }
+			</Column>
+			<Column size="1" className="sg-column">
+				{ ColumnTitles[0] }
+			</Column>
+			<Column size="1" className="sg-column">
+				{ ColumnTitles[0] }
+			</Column>
+			<Column size="1" className="sg-column">
+				{ ColumnTitles[0] }
+			</Column>
+			<Column size="1" className="sg-column">
+				{ ColumnTitles[0] }
+			</Column>
+			<Column size="1" className="sg-column">
+				{ ColumnTitles[0] }
+			</Column>
+			<Column size="1" className="sg-column">
+				{ ColumnTitles[0] }
+			</Column>
+			<Column size="1" className="sg-column">
+				{ ColumnTitles[0] }
+			</Column>
+			<Column size="1" className="sg-column">
+				{ ColumnTitles[0] }
+			</Column>
+			<Column size="1" className="sg-column">
+				{ ColumnTitles[0] }
+			</Column>			
+		</Wrapper>																
+	)
+},{
+	name: 'Pre-calculated - Size 2',
+	component: (
+		<Wrapper outerAlign="reset">
+			<Column size="2" className="sg-column">
 				{ ColumnTitles[1] }
 			</Column>
-			<Column size="2" className="sg-column" gutter="false">
+			<Column size="2" className="sg-column">
 				{ ColumnTitles[1] }
 			</Column>
-			<Column size="2" className="sg-column" gutter="false">
+			<Column size="2" className="sg-column">
 				{ ColumnTitles[1] }
 			</Column>
-			<Column size="2" className="sg-column" gutter="false">
+			<Column size="2" className="sg-column">
 				{ ColumnTitles[1] }
 			</Column>
-			<Column size="2" className="sg-column" gutter="false">
+			<Column size="2" className="sg-column">
 				{ ColumnTitles[1] }
 			</Column>
-			<Column size="2" className="sg-column" gutter="false">
+			<Column size="2" className="sg-column">
 				{ ColumnTitles[1] }
 			</Column>			
 		</Wrapper>																
 	)
 },{
-	name: 'Pre-calculated - Size 3 (w/o optional gutters)',
+	name: 'Pre-calculated - Size 3',
 	component: (
 		<Wrapper outerAlign="reset">
-			<Column size="3" className="sg-column" gutter="false">
+			<Column size="3" className="sg-column">
 				{ ColumnTitles[2] }
 			</Column>
-			<Column size="3" className="sg-column" gutter="false">
+			<Column size="3" className="sg-column">
 				{ ColumnTitles[2] }
 			</Column>
-			<Column size="3" className="sg-column" gutter="false">
+			<Column size="3" className="sg-column">
 				{ ColumnTitles[2] }
 			</Column>
-			<Column size="3" className="sg-column" gutter="false">
+			<Column size="3" className="sg-column">
 				{ ColumnTitles[2] }
 			</Column>			
 		</Wrapper>																
 	)
 },{
-	name: 'Pre-calculated - Size 4 (w/o optional gutters)',
+	name: 'Pre-calculated - Size 4',
 	component: (
 		<Wrapper outerAlign="reset">
-			<Column size="4" className="sg-column" gutter="false">
+			<Column size="4" className="sg-column">
 				{ ColumnTitles[2] }
 			</Column>
-			<Column size="4" className="sg-column" gutter="false">
+			<Column size="4" className="sg-column">
 				{ ColumnTitles[2] }
 			</Column>
-			<Column size="4" className="sg-column" gutter="false">
+			<Column size="4" className="sg-column">
 				{ ColumnTitles[2] }
 			</Column>			
 		</Wrapper>																
 	)
 },{
-	name: 'Pre-calculated - Size 6 (w/o optional gutters)',
+	name: 'Pre-calculated - Size 6',
 	component: (
 		<Wrapper outerAlign="reset">
-			<Column size="6" className="sg-column" gutter="false">
+			<Column size="6" className="sg-column">
 				{ ColumnTitles[2] }
 			</Column>
-			<Column size="6" className="sg-column" gutter="false">
+			<Column size="6" className="sg-column">
 				{ ColumnTitles[2] }
 			</Column>			
 		</Wrapper>																

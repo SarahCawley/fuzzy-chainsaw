@@ -5,10 +5,11 @@ export default ({
 	children,
 	className = '',
 	size = 0,
-	gutter = 'on'
+	gutter = 'on',
+	padding = 'on'
 }) => {
 	return (			
-		<div className={`column column--size--${size} column--gutters--${gutter} ${className}`}>
+		<div className={`column column--size--${size} column--gutters--${gutter} column--padding--${padding} ${className}`}>
 			{children}
 		</div>
 	)
