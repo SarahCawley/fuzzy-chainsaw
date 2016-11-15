@@ -1,12 +1,14 @@
-.column--gutters--on {
-	padding: var(--columnPadding);	
-}
-.column--gutters--off {
-	padding: 0;
+.column--gutters {
+	&--on {
+		padding: var(--grid--column--padding);	
+	}
+	&--off {
+		padding: 0;
+	}
 }
 
-@for $i from 1 to var(--columnCount) {
+@for $i from 1 to var(--grid--column--count) {
 	.column--size--$i { 
-		lost-column: $i/var(--columnCount)  var(--gutterWidth) no-flex;
+		lost-column: $i/var(--grid--column--count)  var(--grid--gutter--width) no-flex;
 	}
-} 
+}

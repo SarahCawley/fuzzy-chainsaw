@@ -1,24 +1,18 @@
 :root {
 	/* The number of columns in the grid system. */
-	--columnCount: 12;
+	--grid--column--count: 12;
 	
 	/* The default breakpoint at which columns in the grid and semantic grid systems change from 100% to the column width specified. */
-	--columnBreakpoint: medium;
+	--grid--column--breakpoint: medium;
 
 	/* The default amount of padding within columns in pixels. */
-	--columnPadding: 16px;
+	--grid--column--padding: 16px;
 
 	/* The default gutter width between columns in pixels or percent. */
-	--gutterWidth: 16px;
+	--grid--gutter--width: 16px;
 
 	/* The maximum width of a row on the page.<p>**NOTE**: if `$gutterWidth` is in pixels, `$rowMaxWidth` must be in pixels.</p> */
-	--rowMaxWidth: 1220px;
-
-	/* The default direction in which to float content. */
-	--defaultFloat: left;
-
-	/* The opposite float of `$defaultFloat`. */
-	--switchFloat: right;
+	--grid--row--max-width: 1220px;
 }
 
 /* The default gutter size for columns */

@@ -1,12 +1,41 @@
 .wrapper {
+	lost-utility: clearfix;
 	margin: auto;
 	padding: 2em;
 }
 
-.wrapper--default {
-	max-width: 960px;
+.wrapper--alignment {
+	/* If no size is set, we look to alignment property for a max-width */
+	&--center,
+	&--left,
+	&--right {
+		max-width: calc(var(--grid--row--max-width));
+	}	
+	&--center:not(.wrapper--size--reset) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&--left  { float: left;	 }
+	&--right { float: right; }
 }
 
-.wrapper--small {
+.wrapper--size--default {
+	max-width: calc(var(--grid--row--max-width));
+}
+
+.wrapper--size--small {
 	max-width: 640px;
+}
+
+.wrapper--size--reset {
+	float: none;
+	max-width: 100%; /* overloads both size and alignment max-widths */
+	width: 100%;
+}
+
+@for $var from 1 to var(--grid--column--count) {
+	.wrapper--size--$(var) { 
+		max-width: calc(calc(calc(var(--grid--row--max-width) / var(--grid--column--count)) * $var) + var(--grid--gutter--width));
+	}
 }
