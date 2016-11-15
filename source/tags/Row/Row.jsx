@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './Row.css';
 
 export default ({
-	className = '',
 	children,
+	className = '',
 	size = '',
 	align = 'center'
 }) => {
@@ -11,7 +11,7 @@ export default ({
 	if(size.toLowerCase() == 'reset'){
 		align = '';
 	}
-	
+
 	return (
 		<div className={`row row--size--${size} row--alignment--${align} ${className}`}>
 			{children}
