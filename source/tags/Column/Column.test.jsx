@@ -2,60 +2,15 @@ import React from 'react';
 import Row from '../Row/Row.jsx';
 import Column from './Column.jsx';
 
-var ColumnTitles = [];
-for(var i = 1; i < 13; i++){
-	ColumnTitles.push(i);
-}
-const Children = [
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl ligula, convallis quis libero ac, ornare malesuada elit. Phasellus ultrices nunc ac dolor congue porta. Phasellus rutrum magna ut sapien convallis, id mollis mi volutpat. In ac arcu elit. In sit amet sapien eu dui maximus tempor. Morbi eleifend lectus sit amet cursus luctus. Pellentesque interdum felis eleifend elit laoreet posuere. In placerat tempor risus, in porttitor magna suscipit gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras lorem sapien, ultricies id libero ac, gravida dignissim sem. In cursus justo ac est accumsan mollis.</p>
+let i, Path, ColumnTitles, Width;
+ColumnTitles = [
+	<p>Integer sed lacus et ligula iaculis convallis.</p>,
+	<p>Integer sed lacus et ligula iaculis convallis ac a odio. Aliquam elementum, nisl vitae malesuada accumsan, ex lorem pharetra eros, cursus fringilla elit dui non nunc.</p>,
+	<p>Integer sed lacus et ligula iaculis convallis ac a odio. Aliquam elementum, nisl vitae malesuada accumsan, ex lorem pharetra eros, cursus fringilla elit dui non nunc. Integer libero turpis, pharetra porttitor hendrerit eget, lobortis sed leo. Aenean fringilla ut enim a fringilla. Pellentesque quis lobortis orci. Duis sit amet dolor ligula. Donec at fermentum tortor, ac elementum erat. Nam varius quam ut dignissim sollicitudin. Sed non purus purus.</p>
 ];
 
+
 module.exports = [{
-	name: 'Two-up - Column Class',
-	component: (
-		<Row>
-			<Column className="two-up">
-				{ Children }
-			</Column>
-			<Column className="two-up">
-				{ Children }
-			</Column>
-		</Row>
-	)
-},{
-	name: 'Three-up - Column Class',
-	component: (
-		<Row>
-			<Column className="three-up">
-				{ Children }
-			</Column>
-			<Column className="three-up">
-				{ Children }
-			</Column>
-			<Column className="three-up">
-				{ Children }
-			</Column>			
-		</Row>
-	)
-},{
-	name: 'Four-up - Column Class',
-	component: (
-		<Row>
-			<Column className="four-up">
-				{ Children }
-			</Column>
-			<Column className="four-up">
-				{ Children }
-			</Column>
-			<Column className="four-up">
-				{ Children }
-			</Column>
-			<Column className="four-up">
-				{ Children }
-			</Column>			
-		</Row>
-	)
-},{
 	name: 'Pre-calculated - Size 1 (w/o optional gutters)',
 	component: (
 		<Row outerAlign="reset">
@@ -144,13 +99,13 @@ module.exports = [{
 	component: (
 		<Row outerAlign="reset">
 			<Column size="4" className="sg-column" gutter="false">
-				{ ColumnTitles[3] }
+				{ ColumnTitles[2] }
 			</Column>
 			<Column size="4" className="sg-column" gutter="false">
-				{ ColumnTitles[3] }
+				{ ColumnTitles[2] }
 			</Column>
 			<Column size="4" className="sg-column" gutter="false">
-				{ ColumnTitles[3] }
+				{ ColumnTitles[2] }
 			</Column>			
 		</Row>																
 	)
@@ -159,10 +114,10 @@ module.exports = [{
 	component: (
 		<Row outerAlign="reset">
 			<Column size="6" className="sg-column" gutter="false">
-				{ ColumnTitles[5] }
+				{ ColumnTitles[2] }
 			</Column>
 			<Column size="6" className="sg-column" gutter="false">
-				{ ColumnTitles[5] }
+				{ ColumnTitles[2] }
 			</Column>			
 		</Row>																
 	)
@@ -174,7 +129,8 @@ module.exports = [{
 				{ ColumnTitles[0] }
 			</Column>
 			<Column size="11" className="sg-column">
-				{ ColumnTitles[10] }
+				{ ColumnTitles[2] }
+				{ ColumnTitles[2] }
 			</Column>			
 		</Row>																
 	)
@@ -186,7 +142,8 @@ module.exports = [{
 				{ ColumnTitles[1] }
 			</Column>
 			<Column size="10" className="sg-column">
-				{ ColumnTitles[9] }
+				{ ColumnTitles[2] }
+				{ ColumnTitles[2] }
 			</Column>			
 		</Row>																
 	)
@@ -195,10 +152,11 @@ module.exports = [{
 	component: (
 		<Row outerAlign="reset">
 			<Column size="3" className="sg-column">
-				{ ColumnTitles[2] }
+				{ ColumnTitles[1] }
 			</Column>
 			<Column size="9" className="sg-column">
-				{ ColumnTitles[8] }
+				{ ColumnTitles[2] }
+				{ ColumnTitles[2] }
 			</Column>			
 		</Row>																
 	)
@@ -207,10 +165,12 @@ module.exports = [{
 	component: (
 		<Row outerAlign="reset">
 			<Column size="4" className="sg-column">
-				{ ColumnTitles[3] }
+				{ ColumnTitles[1] }
+				{ ColumnTitles[1] }
 			</Column>
 			<Column size="8" className="sg-column">
-				{ ColumnTitles[7] }
+				{ ColumnTitles[2] }
+				{ ColumnTitles[2] }
 			</Column>		
 		</Row>																
 	)
@@ -219,10 +179,10 @@ module.exports = [{
 	component: (
 		<Row outerAlign="reset">
 			<Column size="5" className="sg-column">
-				{ ColumnTitles[4] }
+				{ ColumnTitles[2] }
 			</Column>
 			<Column size="7" className="sg-column">
-				{ ColumnTitles[6] }
+				{ ColumnTitles[2] }
 			</Column>			
 		</Row>																
 	)
@@ -231,10 +191,10 @@ module.exports = [{
 	component: (
 		<Row outerAlign="reset">
 			<Column size="6" className="sg-column">
-				{ ColumnTitles[5] }
+				{ ColumnTitles[2] }
 			</Column>
 			<Column size="6" className="sg-column">
-				{ ColumnTitles[5] }
+				{ ColumnTitles[2] }
 			</Column>			
 		</Row>																
 	)
@@ -243,10 +203,11 @@ module.exports = [{
 	component: (
 		<Row outerAlign="reset">
 			<Column size="7" className="sg-column">
-				{ ColumnTitles[6] }
+				{ ColumnTitles[2] }
+				{ ColumnTitles[2] }
 			</Column>
 			<Column size="5" className="sg-column">
-				{ ColumnTitles[4] }
+				{ ColumnTitles[2] }
 			</Column>			
 		</Row>																
 	)
@@ -255,10 +216,11 @@ module.exports = [{
 	component: (
 		<Row outerAlign="reset">
 			<Column size="8" className="sg-column">
-				{ ColumnTitles[7] }
+				{ ColumnTitles[2] }
+				{ ColumnTitles[2] }
 			</Column>
 			<Column size="4" className="sg-column">
-				{ ColumnTitles[3] }
+				{ ColumnTitles[2] }
 			</Column>			
 		</Row>																
 	)
@@ -267,10 +229,11 @@ module.exports = [{
 	component: (
 		<Row outerAlign="reset">
 			<Column size="9" className="sg-column">
-				{ ColumnTitles[8] }
+				{ ColumnTitles[2] }
+				{ ColumnTitles[2] }
 			</Column>
 			<Column size="3" className="sg-column">
-				{ ColumnTitles[2] }
+				{ ColumnTitles[1] }
 			</Column>			
 		</Row>																
 	)
@@ -279,7 +242,8 @@ module.exports = [{
 	component: (
 		<Row outerAlign="reset">
 			<Column size="10" className="sg-column">
-				{ ColumnTitles[9] }
+				{ ColumnTitles[2] }
+				{ ColumnTitles[2] }
 			</Column>
 			<Column size="2" className="sg-column">
 				{ ColumnTitles[1] }
@@ -291,23 +255,12 @@ module.exports = [{
 	component: (
 		<Row outerAlign="reset">
 			<Column size="11" className="sg-column">
-				{ ColumnTitles[10] }
+				{ ColumnTitles[2] }
+				{ ColumnTitles[2] }
 			</Column>
 			<Column size="1" className="sg-column">
 				{ ColumnTitles[0] }
 			</Column>			
-		</Row>																
-	)
-},{
-	name: 'Push / Pull',
-	component: (
-		<Row outerAlign="reset">
-			<Column size="4" className="sg-column" gutter="false" push="8">
-				{ ColumnTitles[1] }
-			</Column>
-			<Column size="8" className="sg-column" gutter="false" pull="4">
-				{ ColumnTitles[3] }
-			</Column>									
 		</Row>																
 	)
 }]

@@ -5,22 +5,10 @@ export default ({
 	className = '',
 	size = 0,
 	children,
-	gutter = true,
-	push = 0,
-	pull = 0
+	gutter = 'on'
 }) => {
-	let columnClasses;
-
-	size =  (size > 0)? 'column column-'+size: '';
-	gutter = (gutter == true)? '' : 'no-gutter';
-	push = (push > 0) ? 'push-'+push : '';
-	pull = (pull > 0) ? 'pull-'+pull : '';
-
-	//removes deadspace
-	columnClasses = size + ' ' + gutter + ' ' + push + ' ' + pull + ' ' + className;
-	columnClasses = columnClasses.replace(/  /g, ' ');
 	return (			
-		<div className={columnClasses}>
+		<div className={`column column--size--${size} column--gutters--${gutter} ${className}`}>
 			{children}
 		</div>
 	)

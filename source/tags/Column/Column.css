@@ -1,52 +1,12 @@
-.column {
-	padding: var(--columnPadding);
+.column--gutters--on {
+	padding: var(--columnPadding);	
 }
-
-.two-up {
-	lost-column: 1/2 var(--gutterWidth) no-flex;
-	padding: var(--columnPadding);
-	&.no-gutters {
-		lost-column: 1/2 0px no-flex;
-	}
-}
-
-.three-up {
-	lost-column: 4/12  var(--gutterWidth) no-flex;
-	padding: var(--columnPadding);
-	&.no-gutters {
-		lost-column: 4/12  0px no-flex;
-	}
-}
-
-.four-up {
-	lost-column: 3/12  var(--gutterWidth) no-flex;
-	padding: var(--columnPadding);
-	&.no-gutters {
-		lost-column: 3/12  0px no-flex;
-	}		
+.column--gutters--off {
+	padding: 0;
 }
 
 @for $i from 1 to var(--columnCount) {
-	.column {
-		&.column-$i { 
-			lost-column: $i/var(--columnCount)  var(--gutterWidth) no-flex;
-			&.no-gutter {
-				lost-column: $i/var(--columnCount)  0px no-flex;
-			}
-		}
-
-		&.push-$i {
-			lost-move: $i/var(--columnCount)  var(--gutterWidth) no-flex;
-			&.no-gutter {
-				lost-move: $i/var(--columnCount)  0px;
-			}		
-		}
-
-		&.pull-$i {
-			lost-move: -$i/var(--columnCount)  var(--gutterWidth) no-flex;
-			&.no-gutter {
-				lost-move: -$i/var(--columnCount)  0px;
-			}		
-		}
-	}		
-}
+	.column--size--$i { 
+		lost-column: $i/var(--columnCount)  var(--gutterWidth) no-flex;
+	}
+} 

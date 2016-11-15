@@ -1,87 +1,19 @@
 .row {
 	lost-utility: clearfix;
-	&.center {
-		margin-left: auto;
-		margin-right: auto;
-		max-width: calc(var(--rowMaxWidth));
-	}
-	&.reset {
-		width: 100%;
-	}
-
-	&.position-children- {
-		/* Centers / Middles / Reset */
-		&reset {
-			lost-align: reset no-flex;			
-		}		
-		&center {
-			lost-align: center no-flex;
-		}
-		&middle {
-			&-left {
-				lost-align: middle-left no-flex;			
-			}				
-			&-right {
-				lost-align: middle-right no-flex;			
-			}			
-			&-center {
-				lost-align: middle-center no-flex; 			
-			}
-		}
-		
-
-		/* Tops */
-		&top {
-			lost-align: top no-flex;	
-			&-left {
-				lost-align: top-left no-flex;			
-			}
-			&-center {
-				lost-align: top-center no-flex;			
-			}
-			&-right {
-				lost-align: top-right no-flex;			
-			}						
-		}	
-
-		/* Bottoms */
-		&bottom {
-			lost-align: bottom no-flex;
-			&-left {
-				lost-align: bottom-left no-flex;			
-			}
-			&-center {
-				lost-align: bottom-center no-flex;			
-			}
-			&-right {
-				lost-align: bottom-right no-flex;			
-			}				
-		}
-
-		/* Lefts */
-		&left {
-			lost-align: left no-flex;			
-		}	
-	
-		/* Rights */	
-		&right {
-			lost-align: right no-flex;
-		}		
-
-		/* Horizontal / Vertical */			
-		&vert {
-			lost-align: vertical no-flex;			
-		}
-		&horz {
-			lost-align: horizontal no-flex;			
-		}
-	}
 }
 
-@for $var from 1 to 12 {
-	.row {
-		&.row-$(var) { 
-			max-width: calc(calc(calc(var(--rowMaxWidth) / var(--columnCount)) * $var) + var(--gutterWidth));
-		}
+.row--alignment--center {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: calc(var(--rowMaxWidth));
+}
+
+.row--size--reset {
+	width: 100%;
+}
+
+@for $var from 1 to var(--columnCount) {
+	.row--size--$(var) { 
+		max-width: calc(calc(calc(var(--rowMaxWidth) / var(--columnCount)) * $var) + var(--gutterWidth));
 	}
 }

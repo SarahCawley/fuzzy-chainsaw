@@ -50,13 +50,3 @@
 		margin-top: 1em;
 	}
 }
-
-/* Styles For Tests Belong Here */
-.sg-row-height {
-	border: 1px solid black;
-	height: 512px;
-}
-.sg-column {
-	border: 1px solid black;
-	text-align: center;	
-}

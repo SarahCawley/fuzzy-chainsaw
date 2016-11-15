@@ -4,22 +4,16 @@ import styles from './Row.css';
 export default ({
 	className = '',
 	children,
-	size = "12",
-	align = "center",
-	childPosition = ""
+	size = '',
+	align = 'center'
 }) => {
-	let rowClasses;
-
-	align = (size.toLowerCase() == 'reset')? '' : align;
-	size = 'row-'+size;
-	childPosition = (childPosition.length)? ' position-children-'+childPosition : '';
-
-	//removes deadspace
-	rowClasses = 'row '+ size + ' ' + align + ' ' + childPosition + ' ' + className;
-	rowClasses = rowClasses.replace(/  /g, ' ');
-
+	//If we use "reset" for row's size, we must also kill row's alignment
+	if(size.toLowerCase() == 'reset'){
+		align = '';
+	}
+	
 	return (
-		<div className={rowClasses}>
+		<div className={`row row--size--${size} row--alignment--${align} ${className}`}>
 			{children}
 		</div>
 	)
