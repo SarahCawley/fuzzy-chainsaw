@@ -11,7 +11,7 @@
 	/* The default gutter width between columns in pixels or percent. */
 	--grid--gutter--width: 16px;
 
-	/* The maximum width of a row on the page.<p>**NOTE**: if `$gutterWidth` is in pixels, `$rowMaxWidth` must be in pixels.</p> */
+	/* The maximum width of a wrapper on the page. */
 	--grid--wrapper--max-width: 1220px;
 }
 
