@@ -1,7 +1,10 @@
 .heading {
 	font-size: 2em;
 	line-height: 1em;
-	@apply --font--bold;
+	/*@apply --font--bold;*/
+	font-family: 'Kranky', cursive;
+	text-align: center;
+	font-size: 70px;
 }
 
 .heading--default {

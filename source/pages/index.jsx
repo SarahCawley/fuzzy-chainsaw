@@ -12,10 +12,10 @@ import {
 } from '../styleguide/components/Index';
 
 export default ({ locals }) => (
-	<PageRoot title="Hello World">
+	<PageRoot title="Rockadoodle!!!">
 		<Wrapper>
 			<Rhythm size="large">
-				<Heading level="1">Hello World</Heading>
+				<Heading level="1">Rockadoodle</Heading>
 
         <Rhythm>
           <Heading level="2">Tags</Heading>

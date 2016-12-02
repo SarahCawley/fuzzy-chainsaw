@@ -6,6 +6,11 @@ background-color: var(--primary);
 color: var(--greyDark);
 */
 :root {
-	--color-primary: #e55030;
-	--color-secondary: #d1d2d4;
+	--color-light-yellow: #efc94c;
+	--color-blue: #334d5c;
+	--color-coral: #df5a49;
+	--color-teal: #45B29D;
+	--color-orange: #e27a3f;
+	--color-boarder-gray: #565051;
+
 }

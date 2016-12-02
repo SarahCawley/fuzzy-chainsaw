@@ -15,6 +15,7 @@ export const PageRoot__Head = ({ title, children }) => (
 		<meta charset="utf-8" />
 		<title>{title}</title>
 		<link rel="stylesheet" href="/assets/styles.css" />
+		<link href="https://fonts.googleapis.com/css?family=Kranky|Open+Sans:400,400i,700" rel="stylesheet"/>
 		{children}
 	</head>
 );

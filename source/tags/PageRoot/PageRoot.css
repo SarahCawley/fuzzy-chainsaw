@@ -18,3 +18,7 @@ button {
 	background-color: transparent;
 	font-size: 1em;
 }
+
+body{
+	background: var(--color-boarder-gray);
+}
